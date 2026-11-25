@@ -1,0 +1,37 @@
+/* Dapur Ngebul — page shell. The game itself draws everything on canvas. */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #1c0f08;
+  font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+}
+
+.stage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+}
+
+canvas#game {
+  width: min(1280px, 96vw);
+  height: auto;
+  aspect-ratio: 1280 / 800;
+  border-radius: 12px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  background: #2b1a12;
+  touch-action: manipulation;
+}
+
+.foot {
+  margin: 0;
+  color: #cbb894;
+  font-size: 14px;
+  text-align: center;
+}
